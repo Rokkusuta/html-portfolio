@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Astronaut</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+  </head>
+
+  <style>
+    h1{
+        text-align: center;
+    }
+    h3{
+        text-align: center;
+    }
+  </style>
+  <body>
+    <h1>A Web-Based AR application Using Model Viewer</h1> 
+    <h3>Astronaut</h3>
+        
+    <model-viewer src="astronaut.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1">
+    <button class="Hotspot" slot="hotspot-1" data-position="34.355038789933715m 57.062726197814m 3.2078054181379514m" data-normal="0.09429760472885068m 0.9284461955173903m 0.35929879455918806m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Virtual Astronaut</div>
+    </button>
+    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+    </div>
+    <button slot="ar-button" id="ar-button">
+        View in your space
+    </button>
+    <div id="ar-prompt">
+        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+    </div>
+</model-viewer>
+
+
+
+ <<script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+  </body>
+</html>
+
+    
+    

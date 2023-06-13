@@ -1,0 +1,14 @@
+<model-viewer src="Leather-Sofa_Vintage.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1.26" shadow-softness="1" exposure="2" camera-orbit="-92.82deg 79.23deg 15.59m" field-of-view="30deg">
+    <button class="Hotspot" slot="hotspot-2" data-position="0.26304212322003157m 2.018874080771252m -0.7168503145660061m" data-normal="-0.6762871963327377m 0.5941533242527708m 0.435450864456355m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Virtual leather Sofa</div>
+    </button>
+    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+    </div>
+    <button slot="ar-button" id="ar-button">
+        View in your space
+    </button>
+    <div id="ar-prompt">
+        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+    </div>
+</model-viewer>

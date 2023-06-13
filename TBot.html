@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>TBot 2023</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+  </head>
+<style>
+    h1{
+        text-align: center;
+    }
+    h3{
+        text-align: center;
+    }
+  .Tbox{
+    background-color: #002868;
+      height: 300px;
+      width: 100%;
+      position: absolute;
+      top: 150px;
+  }
+</style>
+  <body>
+    <h1> A Web-Based AR application Using Model Viewer</h1>
+    <h3>TBot 2000</h3>
+<model-viewer class = "TBot" src="SIngle Moduler Vehicles.glb" ar ar-modes="scene-viewer webxr quick-look" camera-controls poster="poster.webp" shadow-intensity="1">
+    <button class="Hotspot" slot="hotspot-4" data-position="195.35563512122178m 54.73387998628687m 8.723518022356355m" data-normal="0.9887114978297328m 1.383640487130861e-9m -0.1498318192484043m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">The TBot 2000 A.K.A Three Legged Tap Dancer . Situates two forward mounted iron cannons that can pierce the hull of any armoured vehicle. Range: 1000 Miles. Firing Range: 15 miles. Speed: 25 MPH. Energy consumption: 3250 W </div>
+    </button>
+    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+    </div>
+    <button slot="ar-button" id="ar-button">
+        View in your space
+    </button>
+    <div id="ar-prompt">
+        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+    </div>
+</model-viewer>
+
+ <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+  </body>
+</html>
