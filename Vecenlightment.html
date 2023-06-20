@@ -1,30 +1,25 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>VEC Design</title>
-
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enlightenment</title>
 </head>
- 
 <body>
-  <h1>Enlightenment</h1>
+    
+    <model-viewer src="Enlightenmentglb.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" exposure="1.2">
+        <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+        </div>
+        <button slot="ar-button" id="ar-button">
+            View in your space
+        </button>
+        <div id="ar-prompt">
+            <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+        </div>
+    </model-viewer>
+    
+    
 
-  <p>A web-based Augmented Reality experience.</p>
-  
-  <hr size="2" noshade>
-<model-viewer
-      src="../../assets/boom_2_.glb"
-      ar
-      ar-placement="wall"
-      camera-controls
-      touch-action="pan-y"
-      alt="A 3D model of some wall art"
-    ></model-viewer>
-    <hr size="2" noshade>
-  
-<img src="Kev.jpg" alt="Kevin's Profile" height="120" width="120">
 </body>
-
 </html>
